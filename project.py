@@ -26,6 +26,13 @@ def distance(cord1, cord2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
 
     return R * c
+    """
+    Takes two coordinates, and returns the distance between them
+    in km
+    :param cord1: Starting coordinate with longitude and latitude value
+    :param cord2: End coordinate with longitude and latitude
+    :returns: distance bewtween cord1 and cord2 in kilometers
+    """
 
 
 class Customer:
