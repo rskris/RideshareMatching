@@ -191,12 +191,33 @@ if __name__ == "__main__":
         dest = (row['dropoff_latitude'], row['dropoff_longitude'])
         t = row['tpep_pickup_datetime']
         # make assumption on tcall, tmin, tmax
-        tcall = timedelta(hours=int(t[11:13]), minutes=int(t[14:16])-3, seconds=int(t[17:19]))
-        tmin = timedelta(hours=int(t[11:13]), minutes=int(t[14:16])-2, seconds=int(t[17:19]))
-        tmax = timedelta(hours=int(t[11:13]), minutes=int(t[14:16])+2, seconds=int(t[17:19]))
+        tcall = timedelta(
+            hours=int(t[11:13]),
+            minutes=int(t[14:16])-3,
+            seconds=int(t[17:19])
+        )
+        tmin = timedelta(
+            hours=int(t[11:13]),
+            minutes=int(t[14:16])-2, s
+            econds=int(t[17:19])
+        )
+        tmax = timedelta(
+            hours=int(t[11:13]),
+            minutes=int(t[14:16])+2,
+            seconds=int(t[17:19])
+        )
         t = row['tpep_dropoff_datetime']
-        dropoff = timedelta(hours=int(t[11:13]), minutes=int(t[14:16]), seconds=int(t[17:19]))
-        pb.add_cust(Customer(i+1, orig, dest, tcall, tmin, tmax, float(row['fare_amount']), dropoff))
+        dropoff = timedelta(
+            hours=int(t[11:13]),
+            minutes=int(t[14:16]),
+            seconds=int(t[17:19])
+        )
+        pb.add_cust(
+            Customer(
+                i+1, orig, dest, tcall, tmin, tmax, float(row['fare_amount']),
+                dropoff
+            )
+        )
 
     for index, row in df.head(num_taxis).iterrows():
         start_pos = (row['pickup_latitude'], row['pickup_longitude'])
