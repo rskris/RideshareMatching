@@ -198,8 +198,8 @@ if __name__ == "__main__":
         )
         tmin = timedelta(
             hours=int(t[11:13]),
-            minutes=int(t[14:16])-2, s
-            econds=int(t[17:19])
+            minutes=int(t[14:16])-2,
+            seconds=int(t[17:19])
         )
         tmax = timedelta(
             hours=int(t[11:13]),
