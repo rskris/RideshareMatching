@@ -6,9 +6,7 @@ import random
 import argparse
 from process_data import process_data
 
-num_taxis = 100
-num_custs = 1000
-wait_time = timedelta(minutes=5) # 5 mins
+
 max_cust_one_car = 4
 f_name = 'yellow_tripdata_2016-04.csv'
 
@@ -178,6 +176,23 @@ class TaxiProblem:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '--taxis',
+        type=int,
+        default=100,
+        help="Number of taxis active in simulation"
+    )
+    parser.add_argument(
+        '--customers',
+        type=int,
+        default=1000,
+        help="Number of customers within time window"
+    )
+    args = parser.parse_args()
+    num_taxis = args.taxis
+    num_custs = args.customers
+
     # read and filter data
     df = process_data(f_name)
     random.seed(2)
@@ -230,5 +245,5 @@ if __name__ == "__main__":
             orig = custs[j].orig
             pb.add_arc(arc(custs[i], custs[j], distance(dest, orig)))
     
-    # pb.greedy_heuristic()
+    #pb.greedy_heuristic()
     pb.solve()
