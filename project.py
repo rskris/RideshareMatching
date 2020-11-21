@@ -12,8 +12,16 @@ f_name = 'yellow_tripdata_2016-04.csv'
 
 
 def distance(cord1, cord2):
+    """
+    Takes two coordinates, and returns the distance between them
+    in km
+    :param cord1: Starting coordinate with longitude and latitude value
+    :param cord2: End coordinate with longitude and latitude
+    :returns: distance bewtween cord1 and cord2 in kilometers
+    """
     # approximate radius of earth in km
     R = 6373.0
+    
     lat1 = radians(cord1[0])
     lon1 = radians(cord1[1])
     lat2 = radians(cord2[0])
@@ -26,13 +34,6 @@ def distance(cord1, cord2):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
 
     return R * c
-    """
-    Takes two coordinates, and returns the distance between them
-    in km
-    :param cord1: Starting coordinate with longitude and latitude value
-    :param cord2: End coordinate with longitude and latitude
-    :returns: distance bewtween cord1 and cord2 in kilometers
-    """
 
 
 class Customer:
