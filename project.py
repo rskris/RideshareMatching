@@ -69,11 +69,8 @@ class Taxi:
 
     def load(self, c, insert=None):
         self.curr_custs.append(c)
-        curr = ''
         print('Taxi', self.id, 'load Customer', str(c.id), 'at', c.tmin)
-        for i in self.curr_custs:
-            curr += str(i.id) + ' '
-        print('Currently in taxi', self.id, ':', curr)
+        print('Currently in taxi', self.id, ':', [i.id for i in self.curr_custs])
         if insert:
             self.custs.insert(insert + 1, c)
         else:
