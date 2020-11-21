@@ -4,6 +4,7 @@ from math import sin, cos, sqrt, atan2, radians
 from datetime import timedelta
 import random
 import argparse
+from process_data import process_data
 
 num_taxis = 100
 num_custs = 1000
@@ -178,26 +179,7 @@ class TaxiProblem:
 
 if __name__ == "__main__":
     # read and filter data
-    df = pd.read_csv(f_name, nrows=10000)
-    relevant_columns = [
-        'tpep_pickup_datetime', 
-        'tpep_dropoff_datetime',
-        'trip_distance',
-        'pickup_longitude',
-        'pickup_latitude',
-        'dropoff_longitude',
-        'dropoff_latitude',
-        'fare_amount'
-    ]
-    df = df[relevant_columns]
-
-    df = df[df.trip_distance < 100]
-    df = df[df.trip_distance > 0.]
-    df = df[df.pickup_longitude != 0]
-    df = df[df.dropoff_longitude != 0]
-    df = df[df.tpep_pickup_datetime > '2016-04-02']
-    df = df[df.tpep_pickup_datetime < '2016-04-05']
-    df = df.reset_index()
+    df = process_data(f_name)
     random.seed(2)
     sample = sorted(random.sample(range(df.shape[0]), num_custs))
 

@@ -23,6 +23,8 @@ def process_data(
     df = pd.read_csv(f_name, nrows=nrows, usecols=columns)
     df = df[df.trip_distance > min_distance]
     df = df[df.trip_distance <= max_distance]
-    df = df[pickup_longitude != 0]
-    df = df[dropoff_longitude != 0]
+    df = df[df.pickup_longitude != 0]
+    df = df[df.dropoff_longitude != 0]
     df = df.reset_index()
+    return df
+
