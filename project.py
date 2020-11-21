@@ -98,9 +98,7 @@ class Taxi:
         self.curr_custs = new_custs
     
     def loadable(self):
-        if len(self.curr_custs) >= max_cust_one_car:
-            return False
-        return True
+        return False if len(self.curr_custs) >= max_cust_one_car else True
     
     def __repr__(self):
         s = 'Taxi ' + str(self.id) + ' at (' + str(self.pos[0]) + ',' + str(self.pos[1]) + '):\n'
