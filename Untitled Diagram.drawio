@@ -1,1 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2023-03-19T18:00:35.731Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="z8IbVZmYons6hiTxcefq" version="21.0.8" type="github"><diagram name="Page-1" id="UM5fExKAqU_IaTHObPdK">zZRBT4MwFIB/DccllM65XcemZonGDKNeK32jTQrFUoTt11vkMUbIknkwjgvt19fX9nsUj4ZpfW9YLh41B+UFPq89uvIC98yn7tWQfUtuZwgSI3mLSA8ieQCEPtJScigGgVZrZWU+hLHOMojtgDFjdDUM22k1XDVnCYxAFDM1pm+SW9HS+Y3f8weQiehWJj6OpKwLRlAIxnV1gujao6HR2rattA5BNfI6L+28uzOjx40ZyOwlE4KQHaLV5v1pu1T+83KTvazJBLN8MVXigaPyYxIJubMFbtvuOxdGlxmHJp3v0WUlpIUoZ3EzWrnqOyZsqlyPuCYmBmOhPrtjcvTgPiDQKVizdyE4YRIs0B1+PJ3Kqq8E6Zg4qcIUGcPiJ8fUvR/XQEW/0EVHul7dAWWuzTXqWvy3rulI19bdZuPQFj5LKOz1OSOzv5Pmuv11/xk7+WnS9Tc=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-03-19T18:44:57.793Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="CBWx4KvlpmGIpOlXB09Y" version="21.0.8" type="github">
+  <diagram name="Page-1" id="UM5fExKAqU_IaTHObPdK">
+    <mxGraphModel dx="2045" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2CazSDJXNRBl0PBJnTE1-1" value="Sub-Shifts" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="20" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2CazSDJXNRBl0PBJnTE1-3" value="Vertiports" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2CazSDJXNRBl0PBJnTE1-4" value="Rider Request" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2c7vHbLFAKm4WHfnl5eN-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2c7vHbLFAKm4WHfnl5eN-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-50" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2c7vHbLFAKm4WHfnl5eN-2" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Existing Flight&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="70" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2c7vHbLFAKm4WHfnl5eN-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="119.5" as="sourcePoint" />
+            <mxPoint x="90" y="119.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2c7vHbLFAKm4WHfnl5eN-4" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Can we accommodate the request?&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="80" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2c7vHbLFAKm4WHfnl5eN-6" value="YES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2c7vHbLFAKm4WHfnl5eN-8" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Create New Flight&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2c7vHbLFAKm4WHfnl5eN-9" value="NO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2c7vHbLFAKm4WHfnl5eN-10" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;1. origin_vport == start_vport &amp;amp; destination_vport == end_vport&lt;br&gt;2. request_time - proposed_time &amp;lt;= 30 minutes&lt;br&gt;3. current_vport == destination_vport&lt;br&gt;4. seating capacity &amp;lt;= 5&lt;br&gt;5.&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="300" y="30" width="200" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
