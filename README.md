@@ -1,8 +1,7 @@
 # NYC Ridesharing Optimization
-Final project for CS5112 Algorithms for Applications, Fall '20. 
 
 # Problem description
-For our final project, we looked into different ridesharing matching algorithms. Specifically, we wanted to explore the real-world implications of using these algoritms, by using ridesharing data from New York City. These algorithms have in part be drawn from "Online Vehicle Routing: The Edge of Optimization in Large-Scale Applications" by Bertsimas et al. (2018). 
+We looked into different ridesharing matching algorithms. Specifically, we wanted to explore the real-world implications of using these algoritms, by using ridesharing data from New York City. These algorithms have in part be drawn from "Online Vehicle Routing: The Edge of Optimization in Large-Scale Applications" by Bertsimas et al. (2018). 
 
 We used 1.5 hours of ridesharing data, from a Friday afternoon in April 2016. For our simulations, we worked with 1,000 unique customers, as well as 150 cars. A snapshot of this data is visualised below, with green dots customers at their start point and yellow pointers representing the cars. The dataset also provided information on the price paid for each ride. This data was used to calculate revenue for the different algorithms. 
 
